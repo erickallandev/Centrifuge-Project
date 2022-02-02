@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Help me with my cenfrifuge?</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/layout.css" />
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-ligth align-items-between" style="background-color: #160C28;">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #E1EFE6" href="">
+                            <strong class="text-uppercase">Home</strong>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #E1EFE6" href="">About the project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #E1EFE6" href="">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #E1EFE6" href="">Creator's page</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="background"
+        >
+            <div class="container">
+                <div class="upper text-center pt-5">
+                    <strong class="text-uppercase" style="font-size: 25px; font-weight: bold;">Do you need some help with centrifuge parameters?</strong>
+                </div>
+                <div class="screen">
+                    <p class="text-justify mt-5">Generally three parameters are important while working with centrifuges: <strong>Rotor radius</strong> (measured in millimeters), <strong>rotation speed</strong> (measured in Revolutions per minute - RPM) and the <strong>relative centrifugal force</strong> (RCF or G-Force). </p>
+                    <p class="text-center mt-2 mb-5 text-warning bg-dark">Select the <strong>two parameters</strong> that you already have to calculate the parameter that you need:</p>
+                    
+                    <div id="alert" class="alert alert-danger alert-dismissible" role="alert">
+                        Please select only two parameters to insert.
+                        <button class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    
+                    <div class="calculator text-center">
+                        <div class="row calculator-upper" style="font-size: 20px; font-weight: bold;">
+                            <div class="col-sm">
+                                <button type="button" id="rpm-button" class="btn parAuto" style="cursor: pointer;">RPM</button>
+                            </div>
+                            <div class="col-sm">
+                                <button type="button" id="rcf-button" class="btn rcf-button parAuto" style="cursor: pointer;">RCF</button>
+                            </div>
+                            <div class="col-sm">
+                                <button type="button" id="rotor-button" class="btn rotor-button parAuto" style="cursor: pointer;">Rotor radius</button>
+                            </div>
+                        </div>
+                        <div class="row calculator-bottom" >
+                            <div id="littlescreen" class="col-sm calculator-parameter-RPM">
+                            
+                            </div>
+                            <div id="littlescreen" class="col-sm calculator-parameter-RCF">
+                            
+                            </div>
+                            <div id="littlescreen" class="col-sm calculator-parameter-Rotor">
+                            
+                            </div>
+                        </div>
+                        <button class="btn btn-dark" id="calcButton">Calculate</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <script src="assets/js/script.js"></script>
+        <script src="assets/js/jquery-3.6.0.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
