@@ -4,8 +4,13 @@
         border-radius: 3px;
     }
     
-    .background {
+    body {
         background: linear-gradient(rgb(253, 227, 153), rgb(255, 243, 209));
+        height: 100%;
+    }
+
+    .container {
+        height: 100vh;
     }
 
     .parInsert {
@@ -102,4 +107,40 @@
         font-weight: bold;
         font-size: 20px;
         border: 2px solid #160C28;
+    }
+
+    @media (max-width: 600px) {
+        #rpm-button, #rcf-button, #rotor-button {
+            margin: 10px 0px;
+        }
+        .row.calculator-bottom {
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+        }
+        .calculator.text-center {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #littlescreen {
+            width: 80px;
+            height: 50px;
+            margin: 5px 0;
+            padding: 0;
+            line-height: 50px;
+            font-size: 20px;
+        }
+        #calcButton {
+            align-self: center;
+            margin: 0 10px;
+        }
+        #submitedRPM, #submitedRCF, #submitedRotor {
+            background-color: transparent;
+        }
+
+    }
+
+    @media (max-width: 768px) {
+
     }
